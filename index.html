@@ -27,6 +27,26 @@
     width: 170px;
     height: 170px;
     border-radius: 50%;
+    <style>
+  
+  
+
+  
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .card {
+    animation: fadeUp 1s ease;
+  }
+</style>
     background: linear-gradient(45deg, #00c6ff, #0072ff);
     padding: 6px;
     box-shadow: 0 0 25px rgba(0,114,255,0.8);
@@ -140,3 +160,36 @@ body {
 .profile-img {
   width: 160px;
   height: 160px;
+  <div class="card">
+  <img src="profile.jpg.jpeg" class="profile-img">
+
+  <h1>Welcome to My Website</h1>
+  <p>This is my website created using GitHub Pages.</p>
+
+  <a href="resume.pdf" download class="btn">Download Resume</a>
+
+  <br><br>
+
+  <!-- YAHI paste karo -->
+  <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-ID" target="_blank" class="btn">
+    Visit LinkedIn
+  </a>
+
+</div>
+
+  @media (max-width: 768px) {
+  .card {
+    margin: 60px 15px;
+    padding: 25px 18px;
+  }
+
+  .profile-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+}
